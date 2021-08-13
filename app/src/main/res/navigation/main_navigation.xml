@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/destination_signin">
+
+    <fragment
+        android:id="@+id/destination_signin"
+        android:name="com.example.jgi.ui.signin.SignInFragment"
+        tools:layout="@layout/sign_in_fragment" >
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_showitems"
+        android:name="com.example.jgi.ui.showItems.ShowItemsFragment"
+        tools:layout="@layout/show_items_fragment" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/destination_maps"
+        android:name="com.example.jgi.ui.DisplayMapFragment"
+        tools:layout="@layout/display_map_fragment" />
+
+    <fragment
+        android:id="@+id/destination_confirm"
+        android:name="com.example.jgi.ui.ConfirmDocumentFragment"
+        tools:layout="@layout/confirm_document_fragment" />
+
+</navigation>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">JGI</string>
+    <string name="bassrock">Bass Rock</string>
+    <string name="craigleith">Craigleith</string>
+    <string name="pointButtonDescription">Draw new point</string>
+    <string name="polylineButtonDescription">Draw new polyline</string>
+    <string name="polygonButtonDescription">Draw new polygon</string>
+    <string name="freehandLineButtonDescription">Draw freehand line</string>
+    <string name="freehandPolyButtonDescription">Draw freehand polygon</string>
+    <string name="undoButtonDescription">Undo</string>
+    <string name="redoButtonDescription">Redo</string>
+    <string name="stopButtonDescription">Stop</string>
+    <string name="oauth_redirect_host">auth</string>
+    <string name="oauth_redirect_uri">authenticate-with-oauth</string>
+    <string name="portal_url">https://www.arcgis.com/</string>
+    <string name="webmap_world_traffic_id">844c108e5aee48d4be4a4b75a9a2c64f</string>
+    <string name="oauth_client_id">vSp7P8GOc10vImWh</string>
+    <string name="create_version">Create version</string>
+    <string name="switch_version">Switch version</string>
+    <string name="enter_a_version_name">Enter a version name…</string>
+    <string name="enter_a_description">Enter a description…</string>
+    <string name="typdamage">TYPDAMAGE:</string>
+
+    <string-array name="version_access_array">
+        <item>PRIVATE</item>
+        <item>PROTECTED</item>
+        <item>PUBLIC</item>
+    </string-array>
+
+</resources>

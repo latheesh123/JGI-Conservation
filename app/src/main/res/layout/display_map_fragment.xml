@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DisplayMapFragment">
+
+    <com.esri.arcgisruntime.mapping.view.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolbarInclude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="1.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <include
+        android:id="@+id/toolbarInclude"
+        layout="@layout/point_line_polygon_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/send_floating_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Send"
+
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/all_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/outline_send_black_48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/create_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Add Version"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/send_floating_action"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/outline_add_white_48" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/confirm_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Add Version"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/create_version"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/outline_check_black_48" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/all_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="Add Version"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@+id/toolbarInclude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_outline_white_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

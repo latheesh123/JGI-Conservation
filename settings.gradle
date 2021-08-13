@@ -1,0 +1,2 @@
+rootProject.name = "JGI"
+include ':app'
